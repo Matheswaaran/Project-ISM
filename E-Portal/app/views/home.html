@@ -1,0 +1,86 @@
+<div class="row">
+	  		<div class="col-md-12 panel-warning">
+	  			<div class="content-box-header panel-heading">
+  					<div class="panel-title ">We are here to help you</div>
+					
+					<div class="panel-options">
+						<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+						<!-- <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a> -->
+					</div>
+	  			</div>
+	  			<div class="content-box-large box-with-header">
+	  				Explore schemes and scolarship. Government of India has been announcing mutiple government schemes from time to time. Government has schemes for poor, unemployed and various schemes for SC/ST and also for other categories.
+		  			<br /><br />
+					The irony in India is that, most of the people are not aware that there are schemes that can help them out. Those who know, they do not have proper information. In this particular section, we are going to give you detailed information regarding various government schemes.
+					<br /><br />
+				</div>
+	  		</div>
+	  	</div>
+
+	  	<div class="row">
+			<div class="col-md-12 panel-info">
+  			<div class="content-box-header panel-heading">
+					<div class="panel-title ">Search Schemes</div>
+				
+				<!-- <div class="panel-options">
+					<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+				</div> -->
+  			</div>
+  			<div class="content-box-large box-with-header">
+	  			<div class="panel-body" ng-controller="homeCtrl">
+  					<form id="schemeSearchForm">
+						<fieldset>
+							<div class="form-group">
+								<label>Income</label>
+								<!-- <input class="form-control" placeholder="Income" type="text" ng-model="request.income"> -->
+								<select class="form-control" ng-model="request.income">
+									<option value="0 - 100000">0 - 100000</option>
+									<option value="100000 - 200000">100000 - 200000</option>
+									<option value="200000 - 300000">200000 - 300000</option>
+									<option value="300000 - 400000">300000 - 400000</option>
+									<option value="Above 400000">Above 400000</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Age</label>
+								<!-- <input class="form-control" placeholder="Age" type="text" ng-model="request.age"> -->
+								<select class="form-control" ng-model="request.age">
+									<option value="1 - 18">1 - 18</option>
+									<option value="18 - 40">18 - 40</option>
+									<option value="40 - 60">40 - 60</option>
+									<option value="Above 60">Above 60</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Gender</label>
+								<!-- <input class="form-control" placeholder="Gender" type="text" ng-model="request.gender"> -->
+								<select class="form-control" ng-model="request.gender">
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+									<option value="transgender">Transgender</option>
+									<option value="all">All</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Profession</label>
+								<!-- <input class="form-control" placeholder="Profession" type="text" ng-model="request.profession"> -->
+								<select class="form-control" ng-model="request.profession">
+									<option value="student">Student</option>
+									<option value="child">Child</option>
+									<option value="daily wages">Daily Wages</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</fieldset>
+						<div>
+						<button type="submit" class="btn btn-primary" ng-click="doSearch()">Submit</button>
+						</div>
+					</form>
+  				</div>
+			</div>
+  		</div>
+		</div>
+	  </div>
+	</div>
+</div>

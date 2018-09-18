@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Integrated Scheme Management - Web Application</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link href="vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-5">
+            <!-- Logo -->
+            <div class="logo">
+               <h1><a href="index.html">Schemes</a></h1>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div class="row">
+              <div class="col-lg-18">
+                <div class="input-group form">
+                     <input type="text" class="form-control" placeholder="Search...">
+                     <span class="input-group-btn">
+                       <button class="btn btn-primary" type="button">Search</button>
+                     </span>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div id="google_translate_element"></div>
+         </div>
+      </div>
+   </div>
+  </div>
+
+  <div class="page-content">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="sidebar content-box" style="display: block;">
+          <ul class="nav">
+              <!-- Main menu -->
+              <li><a href="#!/home"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+              <li><a href="#!/delhiGov"><i class="glyphicon glyphicon-calendar"></i> Government of Delhi</a></li>
+              <li><a href="#!/centralGov"><i class="glyphicon glyphicon-calendar"></i> Central Government</a></li>
+              <li><a href="#!/otherGov"><i class="glyphicon glyphicon-stats"></i> Other GOvernments</a></li>
+          </ul>
+       </div>
+      </div>
+      <div class="col-md-10">
+
+        <div ng-view></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div>Angular seed app: v<span app-version></span></div> -->
+
+  <footer>
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="copy text-center">Copyright 2014 <a href='#'>Website</a></div>
+          </div>
+          <div class="col-md-9">
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBjOL3qN8jeKa0S7K_kQ4LidRXxhPTVvl4",
+      authDomain: "projectism-sih2k18.firebaseapp.com",
+      databaseURL: "https://projectism-sih2k18.firebaseio.com",
+      projectId: "projectism-sih2k18",
+      storageBucket: "projectism-sih2k18.appspot.com",
+      messagingSenderId: "675977677901"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/stats.js"></script>
+  <script src="vendors/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="vendors/datatables/dataTables.bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/editors.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/tables.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="api/app.js"></script>
+  <script src="api/homeCtrl.js"></script>
+  <script src="api/delhiGovCtrl.js"></script>
+  <script src="api/centralGovCtrl.js"></script>
+  <script src="api/otherGovCtrl.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sih2018.mat.schemefinder.SubActivities.AadharActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_create_worker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.allu.hrm_contractor.UI.Activities.SubActivities.Worker.CreateWorkerActivity"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/card_elevation">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_margin="@dimen/default_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_worker_name"
+                        android:hint="Name"/>
+                    <Button
+                        android:layout_margin="@dimen/default_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_worker_aadhar"
+                        android:background="@color/colorAccent"
+                        android:text="Scan Aadhar"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        >
+                        <EditText
+                            android:layout_margin="@dimen/default_margin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:hint="UID"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:id="@+id/edit_aadhar_uid"
+                            />
+                        <EditText
+                            android:layout_margin="@dimen/default_margin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:hint="Gender"
+                            android:textColor="@color/black"
+                            android:id="@+id/edit_aadhar_gender"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <EditText
+                            android:layout_margin="@dimen/default_margin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:textColor="@color/black"
+                            android:hint="YOB"
+                            android:id="@+id/edit_aadhar_yob"
+                            />
+                        <EditText
+                            android:layout_margin="@dimen/default_margin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:textColor="@color/black"
+                            android:hint="C/O"
+                            android:id="@+id/edit_aadhar_co"
+                            />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="4dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Address :"
+                                android:textSize="16dp"
+                                android:textStyle="normal|bold" />
+
+                            <EditText
+                                android:layout_margin="@dimen/default_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:hint="Door no"
+                                android:textColor="@color/black"
+                                android:id="@+id/edit_aadhar_add_do"
+                                />
+                            <EditText
+                                android:layout_margin="@dimen/default_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:hint="Street"
+                                android:textColor="@color/black"
+                                android:id="@+id/edit_aadhar_add_street"
+                                />
+                            <EditText
+                                android:layout_margin="@dimen/default_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:hint="Landmark"
+                                android:textColor="@color/black"
+                                android:id="@+id/edit_aadhar_add_lm"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:textColor="@color/black"
+                                    android:hint="Village/Taluk/City"
+                                    android:id="@+id/edit_aadhar_add_vill"
+                                    />
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:hint="Post"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/edit_aadhar_add_post"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:hint="District"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/edit_aadhar_add_dist"
+                                    />
+
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:hint="Sub District"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/edit_aadhar_add_subdis"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:hint="State"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/edit_aadhar_add_state"
+                                    />
+                                <EditText
+                                    android:layout_margin="@dimen/default_margin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:textColor="@color/black"
+                                    android:hint="Pincode"
+                                    android:id="@+id/edit_aadhar_add_pin"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="@dimen/default_margin">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/default_heading_text_size"
+                                    android:text="Income: "/>
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/spinner_income"
+                                    >
+
+                                </Spinner>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="@dimen/default_margin">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/default_heading_text_size"
+                                    android:text="Identity: "/>
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/spinner_profession">
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Search Schemes"
+                        android:id="@+id/btn_create"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SchemeFinder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <array name="income">
+        <item name="income1">0 - 100000</item>
+        <item name="income2">100000 - 200000</item>
+        <item name="income3">200000 - 300000</item>
+        <item name="income4">300000 - 400000</item>
+        <item name="income5">Above - 400000</item>
+    </array>
+
+    <array name="Occupation">
+        <item name="type1">student</item>
+        <item name="type2">child</item>
+        <item name="type3">teacher</item>
+        <item name="type3">daily wages</item>
+        <item name="type3">other</item>
+    </array>
+
+</resources>
